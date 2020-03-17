@@ -2,10 +2,6 @@
 
 namespace SystemdLogHandler;
 
-use phpDocumentor\Reflection\Types\Object_;
-use Psr\Log\InvalidArgumentException;
-use Psr\Log\LoggerInterface;
-use Monolog\Logger;
 use Monolog\Handler\AbstractProcessingHandler;
 
 /**
