@@ -1,0 +1,23 @@
+{
+    "name": "linker/journal-monolog-handler",
+    "description": "Monolog handler for systemd-journal",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "psr/log": "^1.1",
+        "php": ">=5.3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "SystemdLogHandler\\": "src"
+        }
+    },
+    "provide": {
+        "psr/log-implementation": "^1.1"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
