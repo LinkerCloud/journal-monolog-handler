@@ -24,6 +24,12 @@
     "config": {
         "bin-dir": "bin"
     },
+    "scripts": {
+        "test": [
+            "parallel-lint . --exclude vendor",
+            "phpunit"
+        ]
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
