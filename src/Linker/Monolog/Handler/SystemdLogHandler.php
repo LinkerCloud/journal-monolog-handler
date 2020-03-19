@@ -1,6 +1,6 @@
-<?php
+<?php declare(strict_types=1);
 
-namespace SystemdLogHandler;
+namespace Linker\Monolog\Handler;
 
 use Monolog\Handler\AbstractProcessingHandler;
 
