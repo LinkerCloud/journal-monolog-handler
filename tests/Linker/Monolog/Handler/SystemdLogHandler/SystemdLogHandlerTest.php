@@ -1,8 +1,7 @@
 <?php
 
-namespace Linker\Monolog\Handler\SystemdLogHandler;
+namespace Linker\Monolog\Handler;
 
-use Linker\Monolog\Handler\SystemdLogHandler;
 use PHPUnit\Framework\TestCase;
 
 class SystemdLogHandlerTest extends TestCase
