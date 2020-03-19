@@ -16,8 +16,6 @@ matrix:
       dist: bionic
     - php: 7.4
       dist: bionic
-    - php: nightly
-      dist: bionic
   allow_failures:
     - php: nightly
 
