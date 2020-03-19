@@ -16,8 +16,6 @@ matrix:
       dist: bionic
     - php: 7.4
       dist: bionic
-  allow_failures:
-    - php: nightly
 
 before_script:
   - if [ "$deps" == "low" ]; then composer update --prefer-dist --prefer-lowest --prefer-stable; fi

@@ -1,6 +1,6 @@
 <?php
 
-namespace Monolog\Monolog\Handler\SystemdLogHandler;
+namespace Linker\Monolog\Handler\SystemdLogHandler;
 
 use Linker\Monolog\Handler\SystemdLogHandler;
 use PHPUnit\Framework\TestCase;
@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 class SystemdLogHandlerTest extends TestCase
 {
     /**
-     * @covers Monolog\Monolog\Handler\SystemdLogHandler::__construct
+     * @covers Linker\Monolog\Handler\SystemdLogHandler::__construct
      */
     public function testConstruct()
     {
