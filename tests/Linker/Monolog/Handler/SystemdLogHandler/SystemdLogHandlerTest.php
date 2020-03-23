@@ -14,7 +14,10 @@ class SystemdLogHandlerTest extends TestCase
         $handler = new SystemdLogHandler();
         $this->assertInstanceOf(SystemdLogHandler::class, $handler);
 
-        $handler = new SystemdLogHandler(LOG_PERROR);
+        $handler = new SystemdLogHandler('Linker');
+        $this->assertInstanceOf(SystemdLogHandler::class, $handler);
+
+        $handler = new SystemdLogHandler('Linker', LOG_PERROR);
         $this->assertInstanceOf(SystemdLogHandler::class, $handler);
     }
 
