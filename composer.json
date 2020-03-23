@@ -5,7 +5,7 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.1",
         "psr/log": "^1.1",
         "monolog/monolog": "^1.2|^2.0"
     },
