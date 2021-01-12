@@ -58,6 +58,10 @@ class SystemdLogHandler extends AbstractProcessingHandler
             $e        = $context['exception'];
             $params[] = 'CODE_FILE=' . $e->getFile();
             $params[] = 'CODE_LINE=' . $e->getLine();
+
+            if ($record['message'] !== $e->getMessage()) {
+                $params[0] = sprintf('MESSAGE=%s: %s', $record['message'], $e->getMessage());
+            }
         }
 
         call_user_func_array('sd_journal_send', $params);
