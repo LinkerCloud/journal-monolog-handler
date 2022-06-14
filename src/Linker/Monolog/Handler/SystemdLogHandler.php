@@ -45,6 +45,10 @@ class SystemdLogHandler extends AbstractProcessingHandler
 
     protected function write(array $record): void
     {
+        if (!function_exists('sd_journal_send')) {
+            return;    
+        }
+        
         $context  = $record['context'];
         $severity = array_search($record['level_name'], self::$levels);
         $params   = [
